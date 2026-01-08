@@ -1,4 +1,4 @@
-package L09_BinarSearch;
+package L10_BinarSearch;
 
 public class C02_FirstOccurrence {
     public static int FirstOccurrence(int[] arr, int k){

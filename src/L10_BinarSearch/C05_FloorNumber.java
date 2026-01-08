@@ -1,4 +1,4 @@
-package L09_BinarSearch;
+package L10_BinarSearch;
 
 public class C05_FloorNumber {
     public static int findFloor(int[] arr, int x) {

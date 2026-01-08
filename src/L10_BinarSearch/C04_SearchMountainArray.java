@@ -1,4 +1,4 @@
-package L09_BinarSearch;
+package L10_BinarSearch;
 
 public class C04_SearchMountainArray {
     public static int peakIndexInMountainArray(int[] arr) {

@@ -1,4 +1,4 @@
-package L09_BinarSearch;
+package L10_BinarSearch;
 
 public class C10_SingleElement {
     public static int search(int arr[]) {

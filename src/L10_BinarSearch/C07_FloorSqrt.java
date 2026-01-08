@@ -1,23 +1,24 @@
-package L09_BinarSearch;
+package L10_BinarSearch;
 
-public class C11_ArrangeCoin {
-    public static int arrangeCoins(int n) {
-        int ans = -1;
+public class C07_FloorSqrt {
+    public static int floorSqrt(int n) {
+        int ans = 0;
         int start = 1 , end = n;
         while(start <= end){
             int mid = start + (end - start) / 2;
-            long sum = ((long)mid * (mid + 1))/2;
-
-            if(sum > n){
+            long sq = (long)mid * (long)mid;
+            if(sq > n){
                 end = mid - 1;
-            }else{
+            }else if(sq < n){
                 ans = mid;
                 start = mid + 1;
+            }else{
+                return mid;
             }
         }
         return ans;
     }
     public static void main(String[] args) {
-        System.out.println(arrangeCoins(5));
+        System.out.println(floorSqrt(8));
     }
 }
