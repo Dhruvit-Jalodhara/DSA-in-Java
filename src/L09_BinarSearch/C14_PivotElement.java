@@ -1,5 +1,7 @@
 package L09_BinarSearch;
 
+
+// here pivot == largest element in array
 public class C14_PivotElement {
     public static int findPivot(int[] arr){
         int start = 0, end = arr.length - 1;
@@ -10,7 +12,7 @@ public class C14_PivotElement {
             else
                 end = mid;
         }
-        return start - 1; // pivot index
+        return start-1; // pivot index
     }
 
     public static void main(String[] args) {
