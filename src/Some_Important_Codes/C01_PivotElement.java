@@ -1,5 +1,7 @@
 package Some_Important_Codes;
 
+
+// here pivot == largest element in array
 public class C01_PivotElement {
     public static int findPivot(int[] arr){
         int start = 0, end = arr.length - 1;

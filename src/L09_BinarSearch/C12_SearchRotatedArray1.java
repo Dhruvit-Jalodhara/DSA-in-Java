@@ -13,6 +13,8 @@ public class C12_SearchRotatedArray1 {
         }
         return -1;
     }
+
+    // here pivot == largest element in array
     public static int findPivot(int[] arr){
         int start = 0, end = arr.length - 1;
 
