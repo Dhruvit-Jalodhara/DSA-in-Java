@@ -20,7 +20,7 @@ public class C03_FirstLastOccurrence {
             else if(arr[mid] > k)
                 end = mid - 1;
             else{
-                ans = mid;
+                ans = mid; 
                 if(first){
                     end = mid - 1;
                 }else{
