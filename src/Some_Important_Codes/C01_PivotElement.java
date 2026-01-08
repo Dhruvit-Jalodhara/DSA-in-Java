@@ -1,6 +1,6 @@
 package Some_Important_Codes;
 
-public class C14_PivotElement {
+public class C01_PivotElement {
     public static int findPivot(int[] arr){
         int start = 0, end = arr.length - 1;
         while(start < end){

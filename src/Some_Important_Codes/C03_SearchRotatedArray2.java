@@ -1,6 +1,6 @@
 package Some_Important_Codes;
 
-public class C13_SearchRotatedArray2 {
+public class C03_SearchRotatedArray2 {
     public static int search(int[] arr, int target) {
         int start = 0, end = arr.length - 1;
         while (start <= end) {

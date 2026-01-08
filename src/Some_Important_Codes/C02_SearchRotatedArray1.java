@@ -1,6 +1,6 @@
 package Some_Important_Codes;
 
-public class C12_SearchRotatedArray1 {
+public class C02_SearchRotatedArray1 {
     public static int binarySearch(int[] arr , int target , int start , int end){
         while(start <= end){
             int mid = start + (end - start)/2 ;
