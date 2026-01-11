@@ -1,6 +1,6 @@
 package Some_Important_Codes;
 
-public class C15_SearchInSortedMatrix {
+public class C04_SearchInSortedMatrix {
     public static int[] search(int[][] arr, int target){
         int[] ans = {-1,-1};
 
