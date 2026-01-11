@@ -1,4 +1,4 @@
-package Questions;
+package Some_Important_Codes;
 
 public class C15_SearchInSortedMatrix {
     public static int[] search(int[][] arr, int target){
