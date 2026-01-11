@@ -28,8 +28,8 @@ public class C19_MatrixMultiply {
         return ans;
     }
     public static void main(String[] args) {
-        int[][] a = {{1,2,3},{4,5,6}};
-        int[][] b = {{1,2,3,10},{4,5,6,11},{7,8,9,12}};
+        int[][] a = {{1},{2},{3}};
+        int[][] b = {{4,5,6}};
 
         print(a);
         print(b);
