@@ -1,5 +1,7 @@
 package L11_Strings;
 
+import java.lang.reflect.Array;
+
 public class C05_BuiltInMethod {
     public static void main(String[] args) {
         String s = "Dhruvit Jalodhara";
@@ -25,5 +27,28 @@ public class C05_BuiltInMethod {
         String s2 = "Jalodhara";
 
         System.out.println(s1.concat(s2));
+
+        // string to integer
+        String str = "123";
+        int x = Integer.parseInt(str);
+        System.out.println(x + 1);
+
+        // in built method :-> we use this most of time
+        int n = 123;
+        String s3 = Integer.toString(n);
+        System.out.println(s3);
+
+        // String to char array
+        String s4 = "Dhruvit";
+        char[] arr = s4.toCharArray();
+        for(char ele : arr) System.out.print(ele + "  ");
+        System.out.println();
+
+
+        //substring
+        String s5 = "Jaishankar";
+        System.out.println(s5.substring(3));
+        System.out.println(s5.substring(1,5)); // print from index 1 to 4 {here last index is excluded}
+
     }
 }
