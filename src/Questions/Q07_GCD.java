@@ -31,7 +31,7 @@ public class Q07_GCD {
         }
         if(a == 0)
             return b;
-    return a;
+        return a;
     }
     public static void main(String[] args) {
         System.out.println(gcd(3,6));
