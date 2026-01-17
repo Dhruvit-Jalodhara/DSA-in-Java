@@ -21,7 +21,6 @@ public class C10_HcfOrGcd {
 //        return a;
 //    }
 
-
     //method 3 : euclidean  algorithm
     // gcd(a,b) = gcd(b-a,a)  , b > a instead of this
     // we can also do gcd(a,b) = gcd(b%a,a) , b > a
@@ -30,5 +29,11 @@ public class C10_HcfOrGcd {
             return b;
 
         return gcd(b%a,a);
+    }
+
+    public static int lcm(int a , int b){
+        int ans = (a*b)/gcd(a,b);
+
+        return ans;
     }
 }
