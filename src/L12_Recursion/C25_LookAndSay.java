@@ -8,24 +8,21 @@ public class C25_LookAndSay {
         String str = countAndSay(n-1);
         StringBuilder ans = new StringBuilder();
         int i = 0 , j = 0;
-        int count = 0;
         while(j < str.length()){
             if(str.charAt(i) == str.charAt(j)){
-                count++;
-            }else{
-                ans.append(count);
+                j++;
+            }else {
+                ans.append(j-i); // freq = j - i
                 ans.append(str.charAt(i));
                 i = j;
-                count = 1;
             }
-            j++;
         }
-        ans.append(count);
+        ans.append(j-i);
         ans.append(str.charAt(i));
         return ans.toString();
     }
     public static void main(String[] args) {
-        String str = countAndSay(5);
+        String str = countAndSay(6);
         System.out.println(str);
     }
 
