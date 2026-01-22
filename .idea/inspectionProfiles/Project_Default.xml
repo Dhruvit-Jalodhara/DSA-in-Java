@@ -1801,7 +1801,7 @@
     <inspection_tool class="ReadResolveAndWriteReplaceProtected" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ReadWriteStringCanBeUsed" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ReassignedToPlainText" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="ReassignedVariable" enabled="true" level="TEXT ATTRIBUTES" enabled_by_default="true" />
+    <inspection_tool class="ReassignedVariable" enabled="false" level="TEXT ATTRIBUTES" enabled_by_default="false" />
     <inspection_tool class="RecordCanBeClass" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="RecordStoreResource" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RecursiveEqualsCall" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -2061,7 +2061,14 @@
     <inspection_tool class="SingleStatementInBlock" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="Singleton" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SingletonConstructor" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SizeReplaceableByIsEmpty" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SizeReplaceableByIsEmpty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredTypes">
+        <set>
+          <option value="java.lang.String" />
+          <option value="java.lang.StringBuilder" />
+        </set>
+      </option>
+    </inspection_tool>
     <inspection_tool class="SleepWhileHoldingLock" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SlowAbstractSetRemoveAll" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="SlowListContainsAll" enabled="true" level="WARNING" enabled_by_default="true" />
