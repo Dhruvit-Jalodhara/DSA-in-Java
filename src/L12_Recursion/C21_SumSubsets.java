@@ -22,7 +22,7 @@ public class C21_SumSubsets {
         temp.add(arr[idx]);
         helper(arr, idx + 1, temp, ans);
 
-        temp.remove(temp.size() - 1); // 🔁 backtracking
+        temp.remove(temp.size() - 1); //  backtracking
 
         // skip element
         helper(arr, idx + 1, temp, ans);
