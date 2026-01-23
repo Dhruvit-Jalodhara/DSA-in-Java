@@ -1,4 +1,4 @@
-package L10_BinarSearch;
+package L10_BinarySearch;
 
 
 // here pivot == largest element in array

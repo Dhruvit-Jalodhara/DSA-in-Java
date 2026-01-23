@@ -1,4 +1,4 @@
-package L10_BinarSearch;
+package L10_BinarySearch;
 
 public class C06_LeetCode2529 {
     public static int maximumCount(int[] arr) {

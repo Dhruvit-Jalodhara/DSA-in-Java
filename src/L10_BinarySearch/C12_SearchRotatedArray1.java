@@ -1,4 +1,4 @@
-package L10_BinarSearch;
+package L10_BinarySearch;
 
 public class C12_SearchRotatedArray1 {
     public static int binarySearch(int[] arr , int target , int start , int end){

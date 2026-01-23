@@ -1,4 +1,4 @@
-package L10_BinarSearch;
+package L10_BinarySearch;
 
 public class C16_LeetCode1539 {
     public static int findKthPositive(int[] arr, int k) {
