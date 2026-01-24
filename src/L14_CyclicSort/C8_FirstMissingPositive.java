@@ -19,13 +19,10 @@ public class C8_FirstMissingPositive {
                 i++;
             }
         }
-        int num = 1;
-        for (i = 0; i < arr.length; i++) {
-            if(num == arr[i])
-                num++;
-            else
-                continue;
+        for (int j = 0; j < arr.length; j++) {
+            if(arr[j] != j+1)
+                return j+1;
         }
-        return num;
+        return n+1;
     }
 }
