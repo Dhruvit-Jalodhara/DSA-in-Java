@@ -8,12 +8,12 @@ public class C1_CycleSort1 {
         while(i < arr.length){
             int correctIdx = arr[i];
 
-            if(arr[i] == i) {
-                i++;
-            } else {
+            if(arr[i] != arr[correctIdx]) {
                 int temp = arr[correctIdx];
                 arr[correctIdx] = arr[i];
                 arr[i] = temp;
+            } else {
+                i++;
             }
         }
     }

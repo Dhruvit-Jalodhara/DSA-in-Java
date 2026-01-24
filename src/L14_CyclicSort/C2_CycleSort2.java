@@ -11,13 +11,12 @@ public class C2_CycleSort2 {
         int i = 0;
         while(i < arr.length){
             int correctIdx = arr[i]-1;
-            if(arr[i] == i + 1){
-                i++;
-            }
-            else{
+            if(arr[i] != arr[correctIdx]) {
                 int temp = arr[correctIdx];
                 arr[correctIdx] = arr[i];
                 arr[i] = temp;
+            } else {
+                i++;
             }
         }
     }
