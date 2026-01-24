@@ -3,8 +3,8 @@ package L14_CyclicSort;
 public class C3_MissingNumber {
 
     // given n - 1 == length of array
-    public static int missingNum(int arr[]) {
-        int n = arr.length + 1;
+    public static int missingNum(int[] arr) {
+        int n = arr.length + 1; // elements from 1 to n
         int i = 0;
 
         while(i < arr.length){
