@@ -166,7 +166,7 @@ public class InheritanceDemo {
         a.sound();   // Dog barks
 
         /*
-         final method:
+         final method :
          Cannot be overridden, always runs parent version.
         */
         a.breathe();
