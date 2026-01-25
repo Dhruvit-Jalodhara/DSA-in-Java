@@ -89,6 +89,20 @@ class SinglyLinkedList{
         System.out.println("null");
     }
 
+    public int get(int index) {
+        if (index < 0 || index >= size) {
+            return -1;
+        }
+
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+
+        return temp.value;
+    }
+
+
 }
 
 public class C04_CustomSinglyLinkedList {
@@ -107,5 +121,7 @@ public class C04_CustomSinglyLinkedList {
         list.deleteLast();
 
         list.display();
+
+        System.out.println(list.get(2));
     }
 }
