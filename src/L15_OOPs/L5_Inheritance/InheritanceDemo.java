@@ -155,6 +155,9 @@ public class InheritanceDemo {
          ACCESS RULE:
          Access depends on reference type (Animal),
          not object type (Dog).
+         During upcasting:
+                Methods are called by the OBJECT (runtime)
+                Instance variables are accessed by the REFERENCE (compile-time)
         */
         System.out.println(a.name);     // allowed
         // System.out.println(a.breed); // ❌ not allowed

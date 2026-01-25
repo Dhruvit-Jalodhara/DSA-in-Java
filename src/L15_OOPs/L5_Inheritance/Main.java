@@ -17,6 +17,10 @@ public class Main {
          It happens automatically (implicit casting).
 
          SYNTAX: SUPERCLASS ref = new SUBCLASS();
+
+         During upcasting:
+                Methods are called by the OBJECT (runtime)
+                Instance variables are accessed by the REFERENCE (compile-time)
         */
 
         Box box3 = new BoxWeight(2,3,4,8);
