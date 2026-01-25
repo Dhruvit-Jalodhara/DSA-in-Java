@@ -83,95 +83,103 @@ public class InnerClasses {
 }
 
 /*
-===============================
-COMPILE TIME vs RUN TIME
-===============================
+=====================================
+COMPILE TIME vs RUN TIME (JAVA)
+=====================================
 
 COMPILE TIME:
 - Java code is checked for syntax
+- Types are verified (class names, variables, constructors)
 - .class file is generated
 - NO objects are created
-- NO memory is allocated in Heap or Stack
+- NO Heap or Stack memory is allocated
 
 RUN TIME:
-- JVM loads .class file
-- Memory is allocated
+- JVM loads the .class file
+- Static members are created when class is loaded
+- Stack frame is created when a method starts
 - Objects are created in Heap
 - References are stored in Stack
 */
 
 
 /*
-===============================
+=====================================
 OBJECT & REFERENCE CREATION
-===============================
+=====================================
 
 Statement:
     Test2 a2 = new Test2("Pratik");
 
-STEP 1 (Run Time):  Space for reference variable `a2` is created in STACK
+PART 1 (Compile Time):
+- Compiler checks:
+  • Test2 is a valid class
+  • a2 is a valid reference variable
+  • Constructor call is valid
+- No memory allocation happens here
 
-STEP 2 (Run Time):  `new Test2("Pratik")` creates an object in HEAP
-
-STEP 3 (Run Time):  Address of HEAP object is stored inside STACK reference `a2`
+PART 2 (Run Time):
+- JVM creates reference variable `a2` in STACK
+- JVM creates Test2 object in HEAP using `new`
+- Constructor is executed
+- Address of HEAP object is stored in STACK reference `a2`
 
 IMPORTANT:
-- Reference lives in STACK
-- Actual object lives in HEAP
+- Reference variable → STACK
+- Actual object → HEAP
 */
 
 
 /*
-===============================
+=====================================
 SECOND OBJECT CREATION
-===============================
+=====================================
 
 Statement:
     Test2 b2 = new Test2("Gourav");
 
-- New reference `b2` is created in STACK
-- New object is created in HEAP
+- Reference `b2` is created in STACK (run time)
+- New Test2 object is created in HEAP (run time)
 - `b2` stores address of second HEAP object
 */
 
 
 /*
-===============================
+=====================================
 STATIC VARIABLE BEHAVIOR
-===============================
+=====================================
 
-- Static variables are created when class is loaded (RUN TIME)
+- Static variables are created when the class is loaded (run time)
 - Stored in Method Area (Metaspace)
-- Only ONE copy exists
-- All objects share the same static variable
+- Only ONE copy exists per class
+- Shared by all objects
 
 In Test2:
 - `name` is static
-- Constructors overwrite the SAME memory location
+- Every constructor call overwrites the SAME variable
 */
 
 
 /*
-===============================
+=====================================
 WHY SAME OUTPUT PRINTS
-===============================
+=====================================
 
 System.out.println(a2.name);
 System.out.println(b2.name);
 
-- `name` does NOT belong to object
-- Both a2 and b2 point to same static variable
+- `name` does NOT belong to any object
+- Both a2 and b2 access the SAME static variable
 - Last assigned value is printed
 */
 
 
 /*
-===============================
+=====================================
 MEMORY CLEANUP
-===============================
+=====================================
 
-- STACK memory is cleared when method ends
-- HEAP objects are removed later by Garbage Collector
+- Stack memory is cleared when method ends
+- Heap objects are removed later by Garbage Collector
 - Static variables live until class is unloaded
 */
-
