@@ -2,12 +2,14 @@ package L16_LinkedList;
 
 // Split a Linked List into 2 halves
 
+import kotlin.Pair;
+
 public class C34_SplitCircularListInTwo {
-    public Node[] split(Node head){
+    public Pair<Node,Node> split(Node head){
 
         // Edge case: empty or single node
         if (head == null || head.next == head)
-            return new Node[]{head, null};
+            return new Pair<>(head,null);
 
         Node slow = head;
         Node fast = head;
@@ -30,6 +32,7 @@ public class C34_SplitCircularListInTwo {
         slow.next = head1;
         fast.next = head2;
 
-        return new Node[]{head1, head2};
+        Pair<Node,Node> ans = new Pair<>(head1,head2);
+        return ans;
     }
 }
