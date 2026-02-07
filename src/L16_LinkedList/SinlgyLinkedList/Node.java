@@ -1,12 +1,10 @@
 package L16_LinkedList.SinlgyLinkedList;
 
 public class Node {
-    int value;
-    Node next; // default value = null
-
-    Node(int value){
+    public int value;
+    public Node next; // default value = null
+    public Node(int value){
         this.value = value;
         this.next = null;
     }
-
 }

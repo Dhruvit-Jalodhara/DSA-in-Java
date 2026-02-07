@@ -1,4 +1,4 @@
-package L16_LinkedList;
+package L16_LinkedList.DoublyLinkedList;
 
 class DoublyLinkedList{
     class Node{

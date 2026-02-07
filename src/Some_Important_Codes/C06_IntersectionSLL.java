@@ -1,6 +1,6 @@
 package Some_Important_Codes;
 
-import L16_LinkedList.Node;
+import L16_LinkedList.SinlgyLinkedList.Node;
 
 public class C06_IntersectionSLL {
     public Node getIntersectionNode(Node headA, Node headB) {
