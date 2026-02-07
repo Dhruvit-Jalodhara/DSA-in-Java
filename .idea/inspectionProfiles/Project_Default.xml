@@ -381,7 +381,7 @@
     <inspection_tool class="ConstantOnLHSOfComparisonJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ConstantOnRHSOfComparisonJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ConstantOnWrongSideOfComparison" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="ConstantValue" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConstantValue" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ConstantValueVariableUse" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ConstructorCount" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="ignoreDeprecatedConstructors" value="false" />
@@ -2513,7 +2513,7 @@
     <inspection_tool class="UnnecessaryLabelOnBreakStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="UnnecessaryLabelOnContinueStatement" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="UnnecessaryLabelOnContinueStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="UnnecessaryLocalVariable" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="UnnecessaryLocalVariable" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="m_ignoreImmediatelyReturnedVariables" value="false" />
       <option name="m_ignoreAnnotatedVariables" value="false" />
     </inspection_tool>
