@@ -34,7 +34,7 @@ class SinglyLinkedList{
         size++;
     }
 
-    public void insert(int value , int index){
+    public void insert(int index , int value){
         if(index < 0 || index > size) {
             System.out.println("Index out of Bound");
             return;
@@ -46,7 +46,7 @@ class SinglyLinkedList{
         }
 
         if(index == size){
-            inserLast(value);
+            insertLast(value);
             return;
         }
 
@@ -63,7 +63,7 @@ class SinglyLinkedList{
         size++;
     }
 
-    public void inserLast(int value){
+    public void insertLast(int value){
         if(tail == null){
             insertFirst(value);
             return;
@@ -190,9 +190,9 @@ public class C04_CustomSinglyLinkedList {
         list.insertFirst(30);
         list.insertFirst(20);
         list.insertFirst(10);
-        list.inserLast(40);
-        list.inserLast(50);
-        list.inserLast(60);
+        list.insertLast(40);
+        list.insertLast(50);
+        list.insertLast(60);
 
         list.display();
 
@@ -201,8 +201,8 @@ public class C04_CustomSinglyLinkedList {
 
         list.display();
 
-        list.insert(10,0);
-        list.insert(70,4);
+        list.insert(0, 30);
+        list.insert(4, 60);
 
         list.display();
 
