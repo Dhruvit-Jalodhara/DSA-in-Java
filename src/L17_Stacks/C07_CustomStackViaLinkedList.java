@@ -37,10 +37,9 @@ class StackLL{
         size++;
     }
 
-    public int pop(){
+    public int pop() throws Exception{
         if(size == 0){
-            System.out.println("stack is empty");
-            return -1;
+            throw new Exception("Stack UnderFlow Error!");
         }
         int value = head.value;
         head = head.next;
@@ -48,10 +47,9 @@ class StackLL{
         return value;
     }
 
-    public int peek(){
+    public int peek() throws Exception{
         if(size == 0){
-            System.out.println("stack is empty");
-            return -1;
+            throw new Exception("Stack UnderFlow Error!");
         }
         return head.value;
     }
@@ -74,8 +72,9 @@ class StackLL{
 }
 
 public class C07_CustomStackViaLinkedList {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         StackLL st1 = new StackLL();
+        // st1.peek();
         st1.push(10);
         st1.push(20);
         st1.push(30);
