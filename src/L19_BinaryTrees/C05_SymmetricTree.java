@@ -5,7 +5,7 @@ package L19_BinaryTrees;
 public class C05_SymmetricTree {
     public boolean isSymmetric(Node root) {
         if(root == null)
-            return null;
+            return true;
 
         root.right = invertTree(root.right);
 
