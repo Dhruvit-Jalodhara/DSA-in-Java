@@ -23,28 +23,49 @@ public class C18_FlattenBTtoLL {
 //        preOrder(root.right , temp);
 //    }
 
+    // method 2 :
+//    public void flatten(Node root) {
+//        if(root == null)
+//            return;
+//
+//        Node lst = root.left;
+//        Node rst = root.right;
+//        root.left = null;
+//        root.right = null;
+//
+//        flatten(lst);
+//        flatten(rst);
+//
+//        root.right = lst;
+//
+//        Node temp = root;
+//        while(temp.right != null){
+//            temp = temp.right;
+//        }
+//
+//        temp.right = rst;
+//    }
+
+    // method 3 : By Modified morris
     public void flatten(Node root) {
-        if(root == null)
-            return;
 
-        Node lst = root.left;
-        Node rst = root.right;
-        root.left = null;
-        root.right = null;
+        Node curr = root;  // Start from root
 
-        flatten(lst);
-        flatten(rst);
+        while(curr != null){                // Traverse the tree
+            if(curr.left != null){          // If left subtree exists
 
-        root.right = lst;
+                Node pred = curr.left;      // Start from left child
+                while(pred.right != null){  // Find the rightmost node of left subtree (predecessor)
+                    pred = pred.right;
+                }
+                pred.right = curr.right;    // Attach original right subtree to the rightmost node
+                curr.right = curr.left;     // Move left subtree to the right
 
-        Node temp = root;
-        while(temp.right != null){
-            temp = temp.right;
+                curr.left = null;           // Set left to null (as per linked list structure)
+            }
+
+            curr = curr.right;              // Move to next node (right side)
         }
-
-        temp.right = rst;
     }
-
-
 
 }
